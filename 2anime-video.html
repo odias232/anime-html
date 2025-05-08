@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Top 10 Anime 2025</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
 
+<h1>🎬 Top 10 Most Watched Anime of 2025</h1>
+
+<p id="slide">Loading...</p>
+
+<script>
+  const lines = [
+    "1. My Hero Academia: Final Battle",
+    "2. Demon Slayer: Swordsmith Village Arc",
+    "3. Jujutsu Kaisen: Final War",
+    "4. One Piece: Egghead Saga",
+    "5. Attack on Titan: Final Retribution",
+    "6. Tokyo Revengers: Reboot",
+    "7. Chainsaw Man: Blood Control",
+    "8. Spy x Family: Operation Merger",
+    "9. Hunter x Hunter: Return of the King",
+    "10. Solo Leveling: Shadow Protagonist",
+    "🎥 Thanks for watching!"
+  ];
+
+  let current = 0;
+  const slideElement = document.getElementById("slide");
+
+  function nextSlide() {
+    if (current < lines.length) {
+      slideElement.textContent = lines[current];
+      current++;
+    } else {
+      clearInterval(interval);
+    }
+  }
+
+  // Show first line immediately
+  nextSlide();
+
+  // Change line every 6 seconds
+  const interval = setInterval(nextSlide, 60
