@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Top 10 Anime 2025 - 1 Minute</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      font-size: 2em;
+      line-height: 1.4;
+    }
+    .active {
+      display: block;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    h1 {
+      color: #ffcc00;
+    }
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>ðŸŽ¬ Top 10 Most Watched Anime of 2025</h1>
+
+<div id="slides">
+  <div class="slide active">
+    <p>1. My Hero Academia: Final Battle</p>
+    <p>The epic conclusion to Dekuâ€™s journey.</p>
+  </div>
+  <div class="slide">
+    <p>2. Demon Slayer: Swordsmith Village Arc</p>
+    <p>Movie-style animation by Ufotable.</p>
+  </div>
+  <div class="slide">
+    <p>3. Jujutsu Kaisen: Final War</p>
+    <p>Huge battles and emotional payoffs.</p>
+  </div>
+  <div class="slide">
+    <p>4. One Piece: Egghead Saga</p>
+    <p>Longest arc yet â€” weekly hype train.</p>
+  </div>
+  <div class="slide">
+    <p>5. Attack on Titan: Final Retribution</p>
+    <p>The ending everyone had to see.</p>
+  </div>
+  <div class="slide">
+    <p>6. Tokyo Revengers: Reboot</p>
+    <p>A fresh twist brings back fans.</p>
+  </div>
+  <div class="slide">
+    <p>7. Chainsaw Man: Blood Control</p>
+    <p>Gen-Z favorite with edgy action.</p>
+  </div>
+  <div class="slide">
+    <p>8. Spy x Family: Operation: Merger</p>
+    <p>Comedy and espionage for all ages.</p>
+  </div>
+  <div class="slide">
+    <p>9. Hunter x Hunter: Return of the King</p>
+    <p>Togashi-sensei returns at last.</p>
+  </div>
+  <div class="slide">
+    <p>10. Solo Leveling: Shadow Protagonist</p>
+    <p>Korean CGI crossover hit.</p>
+  </div>
+  <div class="slide">
+    <p>ðŸŽ¥ Thanks for watching!</p>
+    <p>This video is 1 minute long. Record it now!</p>
+  </div>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function showNextSlide() {
+    if (current >= slides.length) return;
+
+    slides.forEach(s => s.classList.remove('active'));
+    slides[current].classList.add('active');
+
+    current++;
+    if (current <= slides.length) {
+      setTimeout(showNextSlide, 6000); // 6 seconds per slide
+    }
+  }
+
+  setTimeout(showNextSlide, 6000); // Start after intro
+</script>
+
+</body>
+</html>
